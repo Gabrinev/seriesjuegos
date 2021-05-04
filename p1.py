@@ -1,6 +1,6 @@
 import random
 import pymongo
-import Clases
+import seriesjuegos
 
 # aqui hay que editar la conexion a la bd para que funcione con tu bd
 
@@ -57,11 +57,11 @@ videojuegos = []
 series = []
 
 for x in col_juegos.find():
-    obj = Clases.Videojuego(x["titulo"], x["genero"], x["companya"])
+    obj = seriesjuegos.Videojuego(x["titulo"], x["genero"], x["companya"])
     videojuegos.append(obj)
 
 for x in col_series.find():
-    obj = Clases.Serie(x["titulo"], x["genero"], x["creador"])
+    obj = seriesjuegos.Serie(x["titulo"], x["genero"], x["creador"])
     series.append(obj)
 
 # entregar series/videojuegos

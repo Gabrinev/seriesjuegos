@@ -1,7 +1,6 @@
-import Entregable
+import seriesjuegos.Entregable
 
-
-class Videojuego(Entregable):
+class Videojuego(seriesjuegos.Entregable):
 
     def __init__(self, titulo, genero, companya):
         self.titulo = titulo
