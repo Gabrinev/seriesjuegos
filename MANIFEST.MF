@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Name: seriesjuegos/Entregable
+Bean: True
+
+Name: seriesjuegos/Serie
+Bean: True
+
+Name: seriesjuegos/Videojuego
+Bean: True
